@@ -1,3 +1,4 @@
+
 #include <stdlib.h>
 #include <string.h>
 #include "dynamic_array.h"
@@ -28,8 +29,8 @@ int append(DArray* arr, int i){
     }
     arr->array[arr->upto] = i;
     return arr->upto++;
-
-
+    
+        
 }
 
 int get(DArray* arr, int index) {
@@ -74,5 +75,3 @@ int set(DArray* arr, int index, int value) {
 void DArray_free(DArray *arr) {
   free(arr->array);
 }
-
-/*your code here*/
